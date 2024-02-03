@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Text to Binary-Unicode Converter</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <main>
+      <div class="container">
+
+        <div class="header">
+          <h1>
+            Text to Binary-Unicode Converter
+          </h1>
+        </div>
+
+        <div class="item1">
+          <label for="input">FROM: </label>
+          <select id="inputType" name="type">
+            <option value="text" selected>TEXT</option>
+            <option value="binary">BINARY</option>
+            <option value="unicode">UNICODE</option>
+          </select>
+          <textarea name="" id="input" placeholder="Input..." autofocus></textarea>
+      </div>
+
+        <div class="item2">
+          <label for="output">TO: </label>
+          <select id="outputType" name="type">
+            <option value="text">TEXT</option>
+            <option value="binary">BINARY</option>
+            <option value="unicode" selected>UNICODE</option>
+          </select>
+          <textarea name="" id="output" readonly placeholder="Output..."></textarea>
+      </div>
+
+    </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
